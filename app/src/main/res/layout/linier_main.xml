@@ -4,26 +4,28 @@
     android:layout_height="match_parent">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/nama"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="#2196F3" />
+        android:text="@string/muhammad_solehudin"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:padding="10dp"
+        />
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="181dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="5dp"
+        android:layout_height="167dp"
+        android:contentDescription="@string/todo"
         android:scaleType="centerInside"
         android:src="@drawable/soholeh" />
 
     <ScrollView
-        android:layout_width="350dp"
-        android:layout_height="200dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="5dp">
+        android:layout_width="311dp"
+        android:layout_height="293dp"
+        android:padding="10dp"
+        android:layout_gravity="center">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -31,29 +33,25 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
                 android:text="@string/desc"
-                android:textColor="#2196F3" />
-
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/lorem"
-                android:textColor="#0D0D0E" />
+                android:textStyle="italic" />
 
         </LinearLayout>
     </ScrollView>
 
     <Button
         android:id="@+id/button"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="10dp"
-        android:paddingBottom="5dp"
-        android:text="ADD"
-        android:textColor="#3F51B5" />
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:text="@string/selesai" />
+
+
 
 </LinearLayout>
